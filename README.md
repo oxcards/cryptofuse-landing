@@ -107,16 +107,35 @@ pnpm dev
 
 Visit `http://localhost:3000` to see the application running.
 
-## 🌐 Deployment
+## 🚀 Deployment
 
-This application is configured for deployment on Cloudflare Pages:
+CryptoFuse supports automated deployment to Cloudflare Pages through GitHub Actions:
+
+### GitHub Actions Deployment
+
+When you push to the `main` branch, GitHub Actions automatically:
+1. Sets up the Node.js environment
+2. Ensures package-lock.json exists (creates it if missing)
+3. Installs dependencies
+4. Builds the Next.js application
+5. Deploys to Cloudflare Pages
+
+### Local Deployment
+
+For manual deployment from your local machine:
 
 ```bash
-# Build the application
-npm run build
-
-# Deploy to Cloudflare Pages
+# Deploy to production
 npm run deploy
+
+# Deploy to preview branch
+npm run deploy:preview
+```
+
+Before pushing changes to GitHub, run the precommit script to ensure your package-lock.json is properly tracked:
+
+```bash
+npm run precommit
 ```
 
 The site will be deployed to `cryptofuse.pages.dev` by default.

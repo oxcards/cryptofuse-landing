@@ -23,18 +23,41 @@ jobs:
           node-version: '20'
           cache: 'npm'
           
+      # Modified step to handle package-lock.json issues
+      - name: Create package-lock.json if needed
+        run: |
+          if [ ! -f "package-lock.json" ]; then
+            echo "package-lock.json not found. This could cause dependency issues..."
+            echo "📦 Creating package-lock.json from scratch..."
+            npm install --package-lock-only
+            echo "✅ Generated new package-lock.json file"
+          else
+            echo "✅ package-lock.json exists"
+          fi
+      
+      # Fix npm install to be more reliable
       - name: Install dependencies
-        run: npm ci
-        
+        run: |
+          # First try to install normally
+          echo "📦 Installing dependencies..."
+          if npm install; then
+            echo "✅ Dependencies installed successfully"
+          else
+            echo "⚠️ Standard install failed, trying with legacy-peer-deps..."
+            npm install --legacy-peer-deps
+          fi
+      
+      # Build the application
       - name: Build Next.js app
         run: npm run build
       
+      # Deploy to Cloudflare Pages directly
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: cryptofuse
-          directory: out
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref || github.ref_name }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          echo "🚀 Deploying to Cloudflare Pages..."
+          npx wrangler pages deploy out \
+            --project-name=cryptofuse \
+            --branch="${{ github.head_ref || github.ref_name }}"

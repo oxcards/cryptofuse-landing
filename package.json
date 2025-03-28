@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "deploy": "node deploy.js",
-    "deploy:preview": "next build && npx wrangler pages deploy out --project-name cryptofuse --branch preview"
+    "deploy:preview": "next build && npx wrangler pages deploy out --project-name cryptofuse --branch preview",
+    "precommit": "node ensure-lock-file.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
