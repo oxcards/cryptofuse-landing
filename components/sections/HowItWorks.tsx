@@ -149,15 +149,7 @@ export const HowItWorks = () => {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
-          <Button
-            size="lg"
-            className="gap-2 bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/20 transition-all duration-300 hover:shadow-blue-500/40"
-            onClick={() => document.querySelector("#features")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            Get Started Now <ArrowRight className="h-4 w-4" />
-          </Button>
-        </div>
+        {/* Removed Get Started Now button */}
       </div>
     </section>
   )

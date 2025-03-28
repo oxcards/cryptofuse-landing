@@ -19,7 +19,7 @@ export default function CookiePolicyPage() {
         
         <div className="prose dark:prose-invert max-w-none">
           <p className="text-lg mb-4">
-            This Cookie Policy explains how CryptoFuse ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+            This Cookie Policy explains how we use cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them. We are incorporated in the Republic of the Marshall Islands.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">What are cookies?</h2>
@@ -59,12 +59,20 @@ export default function CookiePolicyPage() {
             We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal or regulatory reasons. Please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.
           </p>
           <p>
-            The date at the top of this Cookie Policy indicates when it was last updated.
+            The date at the bottom of this Cookie Policy indicates when it was last updated.
           </p>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Where can I get further information?</h2>
           <p>
-            If you have any questions about our use of cookies or other technologies, please email us at privacy@cryptofuse.io.
+            If you have any questions about our use of cookies or other technologies, please contact us at:
+          </p>
+          <p>
+            Email: contact@cryptofuse.io<br />
+            Address: Republic of the Marshall Islands
+          </p>
+          
+          <p className="text-sm mt-8">
+            Last updated: January 1, 2025
           </p>
         </div>
         

@@ -110,22 +110,22 @@ export const Footer = () => {
             <h3 className="font-bold mb-4 font-heading">Product</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="#features" className="text-muted-foreground hover:text-brand-blue transition-colors">
+                <Link href="/#features" className="text-muted-foreground hover:text-brand-blue transition-colors">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="#currencies" className="text-muted-foreground hover:text-brand-blue transition-colors">
+                <Link href="/#currencies" className="text-muted-foreground hover:text-brand-blue transition-colors">
                   Currencies
                 </Link>
               </li>
               <li>
-                <Link href="#how-it-works" className="text-muted-foreground hover:text-brand-blue transition-colors">
+                <Link href="/#how-it-works" className="text-muted-foreground hover:text-brand-blue transition-colors">
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-blue-600 transition-colors">
+                <Link href="/#contact" className="text-muted-foreground hover:text-blue-600 transition-colors">
                   Contact
                 </Link>
               </li>
