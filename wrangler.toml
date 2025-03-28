@@ -1,0 +1,7 @@
+# This file defines only the minimal configuration for Pages
+# Environment-specific values should come from .env.local
+
+name = "cryptofuse"
+pages_build_output_dir = ".next"
+
+# Environment variables will be loaded from .env.local at deployment time

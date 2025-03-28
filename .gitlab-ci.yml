@@ -1,0 +1,64 @@
+stages:
+  - build
+  - deploy
+
+# Cache dependencies between jobs
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .next/cache/
+
+# Set variables that will be used by all jobs
+variables:
+  NODE_VERSION: 20
+  # Use Node's CI environment
+  CI: "true"
+
+# Build the Next.js app
+build:
+  stage: build
+  image: node:${NODE_VERSION}
+  script:
+    - echo "Installing dependencies..."
+    - npm ci
+    - echo "Building application..."
+    - npm run build
+  artifacts:
+    paths:
+      - .next/
+    expire_in: 1 hour
+
+# Deploy to Cloudflare Pages for production (main branch)
+deploy-production:
+  stage: deploy
+  image: node:${NODE_VERSION}
+  dependencies:
+    - build
+  script:
+    - echo "Installing Wrangler..."
+    - npm install -g wrangler
+    - echo "Deploying to Cloudflare Pages (production)..."
+    - wrangler pages deploy .next --project-name=${CF_PROJECT_NAME} --commit-hash=${CI_COMMIT_SHA} --branch=main
+  only:
+    - main
+  environment:
+    name: production
+    url: https://${CF_PROJECT_NAME}.pages.dev
+
+# Deploy to Cloudflare Pages for preview (any other branch)
+deploy-preview:
+  stage: deploy
+  image: node:${NODE_VERSION}
+  dependencies:
+    - build
+  script:
+    - echo "Installing Wrangler..."
+    - npm install -g wrangler
+    - echo "Deploying to Cloudflare Pages (preview)..."
+    - wrangler pages deploy .next --project-name=${CF_PROJECT_NAME} --commit-hash=${CI_COMMIT_SHA} --branch=${CI_COMMIT_REF_SLUG}
+  except:
+    - main
+  environment:
+    name: preview
+    url: https://${CI_COMMIT_REF_SLUG}.${CF_PROJECT_NAME}.pages.dev

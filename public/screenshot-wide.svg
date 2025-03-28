@@ -1,0 +1,50 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1280" height="80" fill="#EFF6FF"/>
+  
+  <!-- Header -->
+  <rect x="40" y="20" width="40" height="40" rx="20" fill="#1E40AF"/>
+  <text x="100" y="45" font-family="Arial" font-size="24" font-weight="bold" fill="#1E40AF">CryptoFuse</text>
+  
+  <text x="300" y="45" font-family="Arial" font-size="16" fill="#64748B">Features</text>
+  <text x="400" y="45" font-family="Arial" font-size="16" fill="#64748B">Currencies</text>
+  <text x="520" y="45" font-family="Arial" font-size="16" fill="#64748B">How It Works</text>
+  <text x="640" y="45" font-family="Arial" font-size="16" fill="#64748B">FAQ</text>
+  
+  <rect x="1000" y="20" width="100" height="40" rx="20" fill="white" stroke="#3B82F6" stroke-width="1"/>
+  <text x="1025" y="45" font-family="Arial" font-size="16" fill="#3B82F6">Contact</text>
+  
+  <rect x="1120" y="20" width="120" height="40" rx="20" fill="#3B82F6"/>
+  <text x="1140" y="45" font-family="Arial" font-size="16" fill="white">Get Started</text>
+  
+  <!-- Hero Section -->
+  <text x="100" y="180" font-family="Arial" font-size="48" font-weight="bold" fill="#0F172A">Accept Crypto Payments</text>
+  <text x="100" y="230" font-family="Arial" font-size="48" font-weight="bold" fill="#3B82F6">Seamlessly</text>
+  
+  <text x="100" y="280" font-family="Arial" font-size="18" fill="#64748B" width="500">Integrate cryptocurrency payments into your business with our secure, fast, and easy-to-use payment gateway. Join the future of finance today.</text>
+  
+  <rect x="100" y="320" width="180" height="50" rx="25" fill="#3B82F6"/>
+  <text x="140" y="352" font-family="Arial" font-size="18" fill="white">Get Started</text>
+  
+  <rect x="300" y="320" width="180" height="50" rx="25" fill="white" stroke="#3B82F6" stroke-width="1"/>
+  <text x="330" y="352" font-family="Arial" font-size="18" fill="#3B82F6">How It Works</text>
+  
+  <!-- Hero Illustration -->
+  <circle cx="900" cy="300" r="200" fill="#EFF6FF"/>
+  <circle cx="900" cy="300" r="100" fill="#3B82F6" opacity="0.8"/>
+  <circle cx="900" cy="300" r="80" fill="white"/>
+  <rect x="860" y="260" width="80" height="80" rx="20" fill="#1E40AF"/>
+  
+  <!-- Crypto Icons Orbiting -->
+  <circle cx="900" cy="100" r="30" fill="#F7931A"/> <!-- BTC -->
+  <circle cx="1100" cy="300" r="30" fill="#627EEA"/> <!-- ETH -->
+  <circle cx="900" cy="500" r="30" fill="#00FFA3"/> <!-- SOL -->
+  <circle cx="700" cy="300" r="30" fill="#26A17B"/> <!-- USDT -->
+  <circle cx="1000" cy="400" r="25" fill="#8247E5"/> <!-- MATIC -->
+  <circle cx="800" cy="400" r="25" fill="#2775CA"/> <!-- USDC -->
+  <circle cx="1000" cy="200" r="25" fill="#FFDD00"/> <!-- DAI -->
+  
+  <!-- Features Section Indicator -->
+  <rect x="100" y="600" width="1080" height="100" rx="10" fill="#F1F5F9"/>
+  <text x="640" y="650" font-family="Arial" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle">Supported Cryptocurrencies</text>
+</svg>
