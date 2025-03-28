@@ -162,3 +162,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For inquiries, please contact [support@cryptofuse.com](mailto:support@cryptofuse.com).
 # Project specific note
+# Another project note
