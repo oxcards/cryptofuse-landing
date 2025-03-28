@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { CryptoSystemHero } from "@/components/crypto-system-hero"
+import Link from "next/link"
 
 export const Hero = () => {
   const [mounted, setMounted] = useState(false)
@@ -53,13 +54,13 @@ export const Hero = () => {
                   payment gateway. Join the future of finance today.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 animate-slide-left delay-300">
-                  <Button
-                    size="lg"
-                    className="gap-2 bg-blue-600 hover:bg-blue-700 shadow-md hover:shadow-lg transition-shadow"
-                    onClick={() => document.querySelector("#features")?.scrollIntoView({ behavior: "smooth" })}
-                  >
-                    Get Started <ArrowRight className="h-4 w-4" />
-                  </Button>
+                    <Button
+                      size="lg"
+                      className="gap-2 bg-blue-600 hover:bg-blue-700 shadow-md hover:shadow-lg transition-shadow"
+                      onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
+                    >
+                      Get Started <ArrowRight className="h-4 w-4" />
+                    </Button>
                   <Button
                     size="lg"
                     variant="outline"

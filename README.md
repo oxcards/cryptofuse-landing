@@ -34,6 +34,7 @@ CryptoFuse is a modern, secure cryptocurrency payment gateway built with Next.js
 ├── app/                # Next.js 14 app router
 │   ├── layout.tsx      # Root layout with metadata
 │   ├── page.tsx        # Home page
+│   ├── signup-success/  # Success page after form submission
 │   └── legal/          # Legal pages
 ├── components/         # React components
 │   ├── crypto/         # Cryptocurrency-related components
@@ -72,6 +73,11 @@ CryptoFuse is a modern, secure cryptocurrency payment gateway built with Next.js
    - 50+ cryptocurrency icons
    - Token categorization (popular, stablecoins, DeFi)
    - Consistent styling and interactions
+
+5. **Form Integration**
+   - Direct integration with Tally form for user signups
+   - Custom success page after form submission
+   - Seamless user experience from landing page to signup
 
 ## 🚀 Getting Started
 
@@ -124,27 +130,16 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000  # For local development
 # NEXT_PUBLIC_APP_URL=https://cryptofuse.pages.dev  # For production
 ```
 
-## 📚 API Integration Example
+## 🤖 External Integration
 
-```javascript
-// Create a payment request
-const response = await fetch('https://api.cryptofuse.com/v1/payment', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'Bearer YOUR_API_KEY'
-  },
-  body: JSON.stringify({
-    amount: 100,
-    currency: 'USD',
-    crypto: 'BTC',
-    redirect_url: 'https://yourstore.com/success'
-  })
-});
+CryptoFuse integrates with Tally for user signups and data collection:
 
-const { payment_url, payment_id } = await response.json();
-// Redirect customer to payment_url
-```
+- Direct links to Tally forms for user registration
+- Custom success page after form submission
+- Secure data collection for business onboarding
+- No additional backend required for initial user acquisition
+
+This provides a seamless experience for users while allowing efficient data collection.
 
 ## 🎨 Design Guidelines
 

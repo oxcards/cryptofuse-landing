@@ -70,7 +70,7 @@ export const Header = () => {
               <Button
                 size="sm"
                 className="px-4 shadow-md hover:shadow-lg transition-shadow bg-blue-600 hover:bg-blue-700 text-white"
-                onClick={() => document.querySelector("#features")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
               >
                 Get Started
               </Button>
