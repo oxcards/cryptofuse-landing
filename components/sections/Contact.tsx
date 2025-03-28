@@ -30,8 +30,8 @@ export const Contact = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-white/80 text-sm">General Inquiries:</p>
-                  <a href="mailto:info@cryptofuse.com" className="text-white hover:text-blue-200 transition-colors font-medium">
-                    info@cryptofuse.com
+                  <a href="mailto:contacto@cryptofuse.com" className="text-white hover:text-blue-200 transition-colors font-medium">
+                    contact@cryptofuse.com
                   </a>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export const Contact = () => {
                   variant="secondary"
                   className="gap-2 bg-white text-blue-600 hover:bg-white/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:shadow-white/20"
                 >
-                  Get Started <ArrowRight className="h-4 w-4" />
+                  Sign up <ArrowRight className="h-4 w-4" />
                 </Button>
               </a>
               <Button
