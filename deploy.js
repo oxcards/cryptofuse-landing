@@ -102,7 +102,7 @@ async function deploy() {
     
     // Deploy to Cloudflare Pages
     console.log(`Deploying to Cloudflare Pages...`);
-    execSync(`npx wrangler pages deploy .next --project-name=${credentials.projectName}`, {
+    execSync(`npx wrangler pages deploy out --project-name=${credentials.projectName}`, {
       env,
       stdio: 'inherit'
     });
