@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     siteName: APP_NAME,
     images: [
       {
-        url: '/opengraph-image.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: APP_NAME
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: APP_DEFAULT_TITLE,
     description: APP_DESCRIPTION,
-    images: ['/twitter-image.png'],
+    images: ['/og-image.png'],
     creator: '@cryptofuse',
     site: '@cryptofuse'
   },

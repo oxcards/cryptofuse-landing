@@ -64,7 +64,7 @@ export default function CookiePolicyPage() {
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Where can I get further information?</h2>
           <p>
-            If you have any questions about our use of cookies or other technologies, please email us at privacy@cryptofuse.com.
+            If you have any questions about our use of cookies or other technologies, please email us at privacy@cryptofuse.io.
           </p>
         </div>
         

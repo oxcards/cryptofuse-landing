@@ -30,8 +30,8 @@ export const Contact = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-white/80 text-sm">General Inquiries:</p>
-                  <a href="mailto:contacto@cryptofuse.com" className="text-white hover:text-blue-200 transition-colors font-medium">
-                    contact@cryptofuse.com
+                  <a href="mailto:contacto@cryptofuse.io" className="text-white hover:text-blue-200 transition-colors font-medium">
+                    contact@cryptofuse.io
                   </a>
                 </div>
               </div>
@@ -44,8 +44,8 @@ export const Contact = () => {
                 </div>
                 <div className="text-left">
                   <p className="text-white/80 text-sm">Support:</p>
-                  <a href="mailto:support@cryptofuse.com" className="text-white hover:text-blue-200 transition-colors font-medium">
-                    support@cryptofuse.com
+                  <a href="mailto:support@cryptofuse.io" className="text-white hover:text-blue-200 transition-colors font-medium">
+                    support@cryptofuse.io
                   </a>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export const Contact = () => {
                 size="lg"
                 variant="outline"
                 className="bg-transparent border-white text-white hover:bg-white/10"
-                onClick={() => (window.location.href = "mailto:contact@cryptofuse.com")}
+                onClick={() => (window.location.href = "mailto:contact@cryptofuse.io")}
               >
                 Contact Sales
               </Button>

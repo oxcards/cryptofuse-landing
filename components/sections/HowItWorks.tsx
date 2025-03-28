@@ -111,7 +111,7 @@ export const HowItWorks = () => {
                 <code>
                   <span className="text-slate-400">// Create a payment request</span>
                   <br />
-                  <span className="text-purple-400">const</span> <span className="text-blue-300">response</span> <span className="text-white">=</span> <span className="text-purple-400">await</span> <span className="text-yellow-300">fetch</span><span className="text-white">(</span><span className="text-green-300">'https://api.cryptofuse.com/v1/payment'</span><span className="text-white">,</span>
+                  <span className="text-purple-400">const</span> <span className="text-blue-300">response</span> <span className="text-white">=</span> <span className="text-purple-400">await</span> <span className="text-yellow-300">fetch</span><span className="text-white">(</span><span className="text-green-300">'https://api.cryptofuse.io/v1/payment'</span><span className="text-white">,</span>
                   <br />
                   <span className="text-white">{'{'}</span>
                   <br />
